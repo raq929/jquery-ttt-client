@@ -12,7 +12,6 @@ By the end of this, students should be able to:
 
 - Use `$.ajax` to POST a request and receive a response,
 - Use `$.ajax` to PATCH a request and receive a response.
-- Use `resourceWatcher` to receive updates on a resource.
 
 ## Instructions
 
@@ -23,6 +22,8 @@ Fork and clone.
 Web APIs often require some sort of authentication.  The tic-tac-toe API requires users to register and then login to gain an authentication token.
 
 We'll rely heavily on `curl`, `httpbin.org`, the API [documentation](https://github.com/ga-wdi-boston/rails-ttt-project-api#readme), and the `jQuery.ajax` [documentation](http://api.jquery.com/jQuery.ajax/).
+
+I'll go over `EventSource`, `Server Sent Events` and the wrapper `resourceWatcher` at the end of the lesson.
 
 ### Registering with the API
 
@@ -186,4 +187,9 @@ curl --request PATCH --header "Content-Type: application/json" --header "Authori
   }
 }' http://ttt.wdibos.com/games/1
 ```
+
+#### Practice
+
+Fill out the rest of the needed settings to exercise the whole API.  Test your work
+
 
